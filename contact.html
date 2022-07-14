@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fascinate&family=Poppins:wght@200;400;600;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            
+        }
+
+        
+
+        .sub-header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)),
+                url("background.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2% 6%;
+        }
+
+        
+
+        .navbar .logo {
+            margin-top: 13px;
+        }
+
+        .sub-header-content {
+            color: #fff;
+            text-align: center;
+            margin-top: 90px;
+        }
+
+        .contact-main{
+            max-width: 1200px;
+            margin: auto;
+            
+        }
+
+        .row{
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .row i{
+            margin-right: 20px;
+            color: orangered;
+        }
+        
+
+        .map iframe{
+            width: 100%;
+            margin: 50px 0;
+        }
+
+        .contact-main-content{
+            display: flex;
+            margin: 20px;
+            
+        }
+
+        .contact-main-content-1{
+            margin: 10px;
+        }
+
+        .contact-main-content-2 form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-main-content-2 form input,textarea{
+            margin: 5px;
+            padding: 10px;
+            outline: none;
+        }
+
+        .contact-main-content-2 a{
+            color: orangered;
+            border: 1px solid orangered;
+            width: 150px;
+            margin: 5px;
+            text-align: center;
+            padding: 5px 10px;
+        }
+
+        .contact-main-content-2 a:hover{
+            background: orangered;
+            color: #fff;
+        }
+
+        .col{
+            flex-basis: 48%;
+        }
+
+        .about{
+            margin-top: 50px;
+        }
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <section class="sub-header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="" style="width: 150px" /></a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
+        <div class="sub-header-content">
+            <h1>Our Courses</h1>
+        </div>
+    </section>
+    <section class="contact-main">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12458.499096929128!2d39.18800873513462!3d38.68049067367308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4076c0443218a1a3%3A0x8262283711c5c83a!2zw5xuaXZlcnNpdGUsIEVsw6J6xLHEnyBNZXJrZXovRWxhesSxxJ8!5e0!3m2!1str!2str!4v1657051195855!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-main-content">
+            <div class="contact-main-content-1 col">
+                <div class="adress row">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <div class="adress-content row-content">
+                    
+                        <p>Xyz Road,Abc Building</p>
+                        <p>Elazig, Turkey</p>
+                    </div>
+                </div>
+                <div class="phone row">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="phone-content row-content">
+                        <p>+90 0123456789</p>
+                        <p>Monday to SAturday 10 Am to 6 Pm</p>
+                    </div>
+                </div>
+                <div class="email row">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="email-content row-content">
+                        <p> info@cbozay.com</p>
+                        <p>Email us your query</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-main-content-2 col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter email address">
+                    <input type="text" placeholder="Enter your subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Messsage"></textarea>
+                    <a href="#">Send Message</a>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <h3>About Us</h3><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum commodi architecto consequuntur accusamus
+            animi, voluptates iusto, labore autem error quaerat quam quas doloribus vel, ut veniam possimus.
+            Reprehenderit, delectus at.</p><br>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"></i><i
+                class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a
+            href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <p>Made with<i class="fa fa-heart"></i>by cbozay</p>
+    </section>
+
+</body>
+<script>
+    var navLinks = document.getElementById("navLinks");
+function showmenu(){
+    navLinks.style.right = "0";
+}
+function hidemenu(){
+    navLinks.style.right = "-200px";
+}
+</script>
+
+</html>
