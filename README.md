@@ -1,11 +1,4 @@
 # Full_Responsive_Multipage
-# Full_Responsive_Multipage
-# Full_Responsive_Multipage
-# FullResponsive_MultiPage
-# FullResponsive_MultiPage
-# FullResponsive_MultiPage
-# FullResponsive_MultiPage
-# FullResponsive_MultiPage
-# FullResponsive_MultiPage
-# Full_Responsive_Multipage
-# Full_Responsive_Multipage
+
+![](edu.gif)
+
